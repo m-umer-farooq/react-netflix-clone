@@ -1,11 +1,16 @@
 //import logo from './logo.svg';
 import './App.css';
 import Row from './Row';
+import Banner from './Banner';
 import requests from './requests';
 
 function App() { 
   return (
     <div className="App">
+
+      {/* Nav Bar */}
+     <Banner />
+
       <Row  title="NETFLIX ORIGINALS" fetchUrl={requests.fetchNetflixOriginals} isLargeRow/>
       <Row title="TRENDING NOW" fetchUrl={requests.fetchTrending}/>
       <Row title="TOP RATED" fetchUrl={requests.fetchTopRated}/>
